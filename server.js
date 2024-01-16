@@ -8,6 +8,7 @@ dotenv.config()
 
 connectDB();
 const app = express()
+app.use(cookieParser());
 
 const PORT = process.env.PORT || 3000 ;
 
